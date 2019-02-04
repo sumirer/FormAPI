@@ -1,0 +1,8 @@
+---
+#  this is Compulsory mode
+#  if open this
+#  other plugin maybe can't use
+#  if you use this plugin on Base, please open this
+#
+Compulsory: false
+...

@@ -1,11 +1,11 @@
-#FormApi
+# FormApi
 ****
 ##Info
  This plugin is base on pmmp Project\
  you can use this plugin send Form(GUI)\
  to player,and you can use Event listener to\
  handle event
-##How To Use
+# How To Use
 Fast,you can download zip source file,load this plugin
 ```php
 use sole\memory\form\Main;
@@ -49,10 +49,10 @@ and you can use API
         $this->inUse[$player->getName()] = $use;
     }
 ```
-##How To Use Form(UI)
+# How To Use Form(UI)
 ****
 This is an example.
-###CustomForm
+### CustomForm
 ```php
         $list = [];
         $list[] = new Label('test_text');
@@ -62,7 +62,7 @@ This is an example.
         $list[] = new Slider($text, float $min, $max, $step, $default)
         $player->sendForm(new CustomForm('test',$list));
 ```
-###SimpleForm
+### SimpleForm
 ```php
        $list = [
            'A','B','C','D'
@@ -73,12 +73,12 @@ This is an example.
        }
        return new SimpleForm('title','content_text',$row);
 ```
-###ModelForm
+### ModelForm
 ```php
        $player->sendForm(new ModelForm('title',$text,'yes','no'));
 ```
 ****
-#How to Handle Event
+# How to Handle Event
 ****
 listener this event
 ```php
@@ -106,7 +106,7 @@ this event back this value
 `getFormData()` is back handle Form
 `getBackData()` is back data
 
-#Message Server
+# Message Server
 ****
 this system can do something in UI
 for example
@@ -129,7 +129,7 @@ can send ui for A and B,`needBack`is back msg,if set this`true`,you can do
     }
 ```
 A and B chick yes button ,sendMessage 'hello' to A and B
-#Problem
+# Problem
 ****
 this plugin is not test,if you find bugs\
 you can Email:1668961992@qq.com\

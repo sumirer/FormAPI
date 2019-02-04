@@ -49,8 +49,8 @@ class MessageHandler
         }
     }
 
-    public function createMessage(Message $message,$type,$range,$data){
-        switch ($type){
+    public function createMessage(Message $message,$range,$data){
+        switch ($message->getType()){
             case Message::SEND_ALL:
                 foreach (Server::getInstance()->getOnlinePlayers() as $player){
                     $message->updateHash($player->getName());
@@ -79,7 +79,7 @@ class MessageHandler
                 }
                 break;
             default:
-                new \TypeError('type: '.$type.' not found');
+                new \TypeError('type: '.$message->getType().' not found');
         }
     }
 

@@ -58,12 +58,11 @@ class Main extends PluginBase
     /**
      * send message to player
      * @param Message $message
-     * @param int $type see @Message
      * @param array $range if type is SEND_RANGE,need put player name(string)
-     * @param array $backData  this array can get in see @PlayerCheckWaitEvent,if not needback,not use this value
+     * @param array $backData this array can get in see @PlayerCheckWaitEvent,if not needback,not use this value
      */
-    public function handler(Message $message, $type, array $range=[],$backData = []){
-        $this->handler->createMessage($message,$type,$range,$backData);
+    public function handler(Message $message,  array $range=[],$backData = []){
+        $this->handler->createMessage($message,$range,$backData);
     }
 
     /**
@@ -90,5 +89,6 @@ class Main extends PluginBase
      */
     public function setUse(Player $player,bool $use){
         $this->inUse[$player->getName()] = $use;
+
     }
 }

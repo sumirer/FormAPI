@@ -5,6 +5,8 @@
  you can use this plugin send Form(GUI)\
  to player,and you can use Event listener to\
  handle event
+## DdownLoad
+<a href='https://github.com/SayHellos/FormAPI/releases/tag/1.0.0'>DowLoad Phar</a>
 # How To Use
 Fast,you can download zip source file,load this plugin
 ```php

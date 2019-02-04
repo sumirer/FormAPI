@@ -1,0 +1,8 @@
+name: FormAPI
+main: sole\memory\form\Main
+version: 1.0.0
+api: [3.0.0-ALPHA5,3.0.0]
+
+load: STARTUP
+authors: ["SoleMemory"]
+
